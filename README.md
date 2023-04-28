@@ -38,4 +38,18 @@ npm i -g pyright
 
 ```console
 nvim -c 'PlugInstall' -c 'qa'
+nvim -c 'UpdateRemovePlugins' -c 'qa'
+```
+
+##### Enable Wakatime plugin
+
+```console
+nvim -c 'WakaTimeApiKey'
+```
+    Access Wakatime API key at https://wakatime.com/settings/account
+
+##### Enable Codeium plugin
+
+```console
+nvim -c 'Codeium Auth'
 ```
