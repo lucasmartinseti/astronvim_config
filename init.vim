@@ -54,6 +54,8 @@ Plug 'yuttie/hydrangea-vim'
 Plug 'junegunn/rainbow_parentheses.vim'
 Plug 'junegunn/limelight.vim'
 Plug 'junegunn/vim-journal'
+Plug 'wakatime/vim-wakatime'
+Plug 'Exafunction/codeium.vim'
 
 call plug#end()
 
@@ -64,7 +66,7 @@ set incsearch ignorecase smartcase hlsearch
 set wildmode=longest,list,full wildmenu
 set ruler laststatus=2 showcmd showmode
 set list listchars=trail:»,tab:»-
-set fillchars+=vert:\ 
+set fillchars+=vert:\
 set wrap breakindent
 set encoding=utf-8
 set textwidth=0
@@ -196,6 +198,10 @@ let g:ale_completion_enabled = 0
 let g:ale_completion_autoimport = 0
 let g:ale_set_highlights = 0
 
+" Codium """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+let g:codium_enabled = 0
+let g:codeium_disable_bindings = 1
+
 """ Core plugin configuration (lua)
 lua << EOF
 servers = {
@@ -301,3 +307,10 @@ nnoremap <leader>fh <cmd>Telescope help_tags<cr>
 nnoremap <leader>fc <cmd>Telescope colorscheme<cr>
 nnoremap <leader>f/ <cmd>Telescope current_buffer_fuzzy_find<cr>
 
+" codeium mappings
+imap <script><silent><nowait><expr> <C-f> codeium#Accept()
+imap <C-l> <Cmd>call codeium#CycleCompletions(1)<CR>
+imap <C-k> <Cmd>call codeium#CycleCompletions(-1)<CR>
+imap <C-x> <Cmd>call codeium#Clear()<CR>
+nmap <leader>cd :CodeiumDisable<CR>
+nmap <leader>ce :CodeiumEnable<CR>
