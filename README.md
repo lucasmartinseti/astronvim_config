@@ -46,7 +46,7 @@ nvim -c 'UpdateRemovePlugins' -c 'qa'
 ```console
 nvim -c 'WakaTimeApiKey'
 ```
-    Access Wakatime API key at https://wakatime.com/settings/account
+> Access Wakatime API key at https://wakatime.com/settings/account
 
 ##### Enable Codeium plugin
 
