@@ -38,7 +38,7 @@ npm i -g pyright
 
 ```console
 nvim -c 'PlugInstall' -c 'qa'
-nvim -c 'UpdateRemovePlugins' -c 'qa'
+nvim -c 'UpdateRemotePlugins' -c 'qa'
 ```
 
 ##### Enable Wakatime plugin
