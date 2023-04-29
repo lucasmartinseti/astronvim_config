@@ -75,7 +75,7 @@ set number
 set title
 set clipboard=unnamed,unnamedplus
 " Directory tmp backup
-set backupdir=$TMPDIR/y
+set backupdir=$TMPDIR//
 set directory=$TMPDIR//
 set undodir=$TMPDIR//
 set scrolloff=8
