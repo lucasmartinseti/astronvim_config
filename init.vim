@@ -186,11 +186,15 @@ let g:mkdp_page_title = '「${name}」'
 " ALE """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 let g:ale_linters = {
 \   'python': ['bandit'],
+\   'c': ['clang'],
+\   'cpp': ['clang'],
 \}
 
 let g:ale_fixers = {
 \   '*': ['trim_whitespace'],
 \   'python': ['black', 'isort'],
+\    'c++': ['clang-format'],
+\    'c': ['clang-format'],
 \}
 
 let g:ale_fix_on_save = 1

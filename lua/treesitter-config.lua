@@ -6,6 +6,7 @@ require('nvim-treesitter.configs').setup {
         'vim',
         'vimdoc',
         'c',
+        'cpp',
         'dockerfile',
         'css',
         'html',
