@@ -5,7 +5,7 @@
 ###### macOS
 
 ```console
-brew install ripgrep nvim node python3 curl wget gcc fd c
+brew install ripgrep nvim node python3 curl wget gcc fd c llvm glib
 ```
 
 ###### Linux
@@ -31,7 +31,8 @@ deactivate
 ##### Install node packages
 
 ```console
-npm i -g pyright
+npm config set prefix '~/.local/'
+npm i -g pyright dockerfile-language-server-nodejs typescript-language-server typescript vscode-json-languageservice yaml-language-server vscode-langservers-extracted
 ```
 
 ##### Install plugins on nvim
