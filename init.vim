@@ -209,17 +209,13 @@ let g:codeium_disable_bindings = 1
 """ Core plugin configuration (lua)
 lua << EOF
 servers = {
-    'python',
-    'comment',
-    'lua',
-    'vim',
-    'vimdoc',
-    'c',
-    'cpp',
-    'dockerfile',
-    'css',
+    'pyright',
     'html',
-    'json'
+    'cssls',
+    'clangd',
+    'jsonls',
+    'yamlls',
+    'tsserver',
     --'tsserver', -- uncomment for typescript. See https://github.com/neovim/nvim-lspconfig/blob/master/doc/server_configurations.md for other language servers
 }
 require('treesitter-config')
