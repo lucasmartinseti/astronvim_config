@@ -13,7 +13,14 @@ require('lualine').setup {
     sections = {
         lualine_a = {'mode'},
         lualine_b = {'branch', 'diff', 'diagnostics'},
-        lualine_c = {'filename'},
+        lualine_c = {
+            {'filename',
+                file_status = true,
+                newfile_status = true,
+                path = 1,
+                shorting_target = 30,
+            }
+        },
         lualine_x = {
             'encoding',
             {'fileformat',  symbols = {
