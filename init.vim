@@ -302,6 +302,14 @@ nmap tn :tabn<CR>
 nmap tp :tabp<CR>
 " nmap <Tab> :tabn<CR>
 
+" Git
+nmap gs :G<CR>
+nmap gc :Git commit<CR>
+nmap ga :Git add .<CR>
+nmap gp :Git push<CR>
+nmap gpp :Git pull<CR>
+
+
 " Python
 autocmd Filetype python nmap <leader>d <Plug>(pydocstring)
 autocmd FileType python nmap <leader>p :Black<CR>
