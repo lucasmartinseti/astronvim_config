@@ -5,7 +5,7 @@
 ###### macOS
 
 ```console
-brew install ripgrep nvim node python3 curl wget gcc fd c llvm glib
+brew install ripgrep nvim node python3 ipython pyenv curl wget gcc fd c llvm glib
 ```
 
 ###### Linux

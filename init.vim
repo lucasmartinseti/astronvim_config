@@ -44,6 +44,9 @@ Plug 'dense-analysis/ale'
 " Functionalities - Python
 Plug 'psf/black', { 'branch': 'stable' }
 Plug 'heavenshell/vim-pydocstring'
+Plug 'jpalardy/vim-slime', { 'for': 'python' }
+Plug 'hanschen/vim-ipython-cell', { 'for': 'python' }
+Plug 'klafyvel/vim-slime-cells', { 'for': 'python' }
 
 " Aesthetics - Colorschemes
 Plug 'dracula/vim', { 'as': 'dracula' }
@@ -206,6 +209,16 @@ let g:ale_set_highlights = 0
 let g:codium_enabled = 0
 let g:codeium_disable_bindings = 1
 
+" Slime """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+let g:slime_target = 'tmux'
+let g:slime_python_ipython = 1
+let g:slime_default_config = {'socket_name': get(split($TMUX, ','), 0), 'target_pane': '0' }
+let g:slime_dont_ask_default = 1
+let g:slime_cell_delimiter = "^\\s*##"
+
+" Ipython """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+let g:ipy_perform_mappings = 0
+
 """ Core plugin configuration (lua)
 lua << EOF
 servers = {
@@ -332,3 +345,18 @@ imap <C-k> <Cmd>call codeium#CycleCompletions(-1)<CR>
 imap <C-x> <Cmd>call codeium#Clear()<CR>
 nmap <leader>cd :CodeiumDisable<CR>
 nmap <leader>ce :CodeiumEnable<CR>
+
+" ipython-cell mappings
+nnoremap <Leader>s :SlimeSend1 ipython3<CR>
+nnoremap <Leader>r :IPythonCellRun<CR>
+nnoremap <Leader>R :IPythonCellRunTime<CR>
+nnoremap <Leader>c :IPythonCellExecuteCell<CR>
+nnoremap <Leader>C :IPythonCellExecuteCellJump<CR>
+nnoremap <Leader>l :IPythonCellClear<CR>
+nnoremap <Leader>x :IPythonCellClose<CR>
+nmap <Leader>h <Plug>SlimeLineSend
+xmap <Leader>h <Plug>SlimeRegionSend
+nnoremap <Leader>Q :IPythonCellRestart<CR>
+nmap <Leader>j <Plug>SlimeCellsSendAndGoToNext
+nmap <Leader><Down> <Plug>SlimeCellsNext
+nmap <Leader><Up> <Plug>SlimeCellsPrev
