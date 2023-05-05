@@ -40,7 +40,6 @@ Plug 'wellle/context.vim'
 Plug 'antoinemadec/FixCursorHold.nvim'
 Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install' }
 Plug 'dense-analysis/ale'
-Plug 'numToStr/Comment.nvim'
 
 " Functionalities - Python
 Plug 'psf/black', { 'branch': 'stable' }
@@ -159,6 +158,9 @@ let g:vim_markdown_conceal_code_blocks = 0
 " FixCursorHold for better performance
 let g:cursorhold_updatetime = 100
 
+" vim-fugitive
+let g:fugitive_gitlab_domains = {'ssh://git@gitlab.com': 'https://gitlab.com'}
+
 " context.vim
 let g:context_nvim_no_redraw = 1
 
@@ -239,7 +241,6 @@ require('telescope-config')
 require('lualine-config')
 require('nvim-tree-config')
 require('diagnostics')
-require('Comment').setup()
 EOF
 
 """ Custom Functions
