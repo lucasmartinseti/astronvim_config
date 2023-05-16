@@ -215,7 +215,7 @@ let g:codeium_disable_bindings = 1
 " Slime """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 let g:slime_target = 'tmux'
 let g:slime_python_ipython = 1
-let g:slime_default_config = {'socket_name': get(split($TMUX, ','), 0), 'target_pane': '0' }
+let g:slime_default_config = {'socket_name': get(split($TMUX, ','), 0), 'target_pane': ':.2' }
 let g:slime_dont_ask_default = 1
 let g:slime_cell_delimiter = "^\\s*##"
 
@@ -350,7 +350,7 @@ nmap <leader>cd :CodeiumDisable<CR>
 nmap <leader>ce :CodeiumEnable<CR>
 
 " ipython-cell mappings
-nnoremap <Leader>s :SlimeSend1 ipython3<CR>
+nnoremap <Leader>s :SlimeSend1 ipython3 --no-banner<CR>
 nnoremap <Leader>r :IPythonCellRun<CR>
 nnoremap <Leader>R :IPythonCellRunTime<CR>
 nnoremap <Leader>c :IPythonCellExecuteCell<CR>
