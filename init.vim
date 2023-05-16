@@ -40,6 +40,7 @@ Plug 'wellle/context.vim'
 Plug 'antoinemadec/FixCursorHold.nvim'
 Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install' }
 Plug 'dense-analysis/ale'
+Plug 'puremourning/vimspector'
 
 " Functionalities - Python
 Plug 'psf/black', { 'branch': 'stable' }
@@ -221,6 +222,10 @@ let g:slime_cell_delimiter = "^\\s*##"
 
 " Ipython """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 let g:ipy_perform_mappings = 0
+
+" Vimspector """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+let g:vimspector_enable_mappings = 'HUMAN'
+let g:vimspector_install_gadgets = [ 'debugpy', 'vscode-cpptools', 'CodeLLDB' ]
 
 """ Core plugin configuration (lua)
 lua << EOF
