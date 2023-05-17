@@ -369,3 +369,7 @@ nnoremap <Leader>Q :IPythonCellRestart<CR>
 nmap <Leader>j <Plug>SlimeCellsSendAndGoToNext
 nmap <Leader><Down> <Plug>SlimeCellsNext
 nmap <Leader><Up> <Plug>SlimeCellsPrev
+
+" Vimspector
+nmap <Leader>di <Plug>VimspectorBalloonEval
+xmap <Leader>di <Plug>VimspectorBalloonEval
