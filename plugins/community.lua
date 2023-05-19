@@ -6,4 +6,5 @@ return {
 
   { import = "astrocommunity.colorscheme.dracula" },
   { import = "astrocommunity.completion.codeium-vim" },
+  { import = "astrocommunity.pack.python" },
 }
