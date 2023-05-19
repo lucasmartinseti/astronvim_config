@@ -8,4 +8,5 @@ return {
   { import = "astrocommunity.completion.codeium-vim" },
   { import = "astrocommunity.pack.python" },
   { import = "astrocommunity.markdown-and-latex.markdown-preview-nvim" },
+  { import = "astrocommunity.media.vim-wakatime" },
 }
