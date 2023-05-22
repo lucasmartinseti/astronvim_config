@@ -18,6 +18,8 @@ return {
     icons_enabled = true,            -- disable icons in the UI (disable if no nerd font is available, requires :PackerSync after changing)
     ui_notifications_enabled = true, -- disable notifications when toggling UI elements
     python3_host_prog = "~/.pyenv/versions/nvim/bin/python",
+    neovim_ruby_host = "/opt/homebrew/opt/ruby/bin/ruby",
+    load_perl_provider = 0,
   },
 }
 -- If you need more control, you can use the function()...end notation
