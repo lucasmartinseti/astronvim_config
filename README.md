@@ -5,7 +5,7 @@
 ###### macOS
 
 ```console
-brew install ripgrep awk nvim node ipython lua luarocks lazygit pyenv pyenv-virtualenv ruby rben curl wget gcc fd c llvm glib
+brew install ripgrep awk nvim node ipython lua luarocks lazygit pyenv pyenv-virtualenv ruby rbenv curl wget gcc fd c llvm glib
 ```
 
 ##### Install AstroNvim
