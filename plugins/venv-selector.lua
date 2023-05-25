@@ -7,21 +7,21 @@ return {
     "mfussenegger/nvim-dap-python",
   },
   config = true,
-  keys = {
-    {
-      "<leader>vs",
-      "<cmd>:VenvSelect<cr>",
-      -- optional if you use a autocmd (see #🤖-Automate)
-      "<leader>vc",
-      "<cmd>:VenvSelectCached<cr>",
-    },
-  },
+  -- keys = {
+  --   {
+  --     "<leader>vs",
+  --     "<cmd>:VenvSelect<cr>",
+  --     -- optional if you use a autocmd (see #🤖-Automate)
+  --     "<leader>vc",
+  --     "<cmd>:VenvSelectCached<cr>",
+  --   },
+  -- },
   opts = {
     -- auto_refresh (default: false). Will automatically start a new search every time VenvSelect is opened.
     -- When its set to false, you can refresh the search manually by pressing ctrl-r. For most users this
     -- is probably the best default setting since it takes time to search and you usually work within the same
     -- directory structure all the time.
-    auto_refresh = false,
+    auto_refresh = true,
 
     -- search_venv_managers (default: true). Will search for Poetry and Pipenv virtual environments in their
     -- default location. If you dont use the default location, you can

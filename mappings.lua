@@ -28,7 +28,9 @@ return {
     ["<leader>mp"] = { "<cmd>MarkdownPreview<cr>", desc = "Markdown Preview" },
     --
     -- venv-selector
-    ["<leader>v"] = { name = " Venv" },
+    ["<leader>v"] = { name = " Venv Selector" },
+    ["<leader>vs"] = { "<cmd>:VenvSelect<cr>", desc = "Venv Select" },
+    ["<leader>vc"] = { "<cmd>:VenvSelectCached<cr>", desc = "Venv Select Cached" },
   },
   t = {
     -- setting a mapping to false will disable it
