@@ -6,7 +6,7 @@ return {
 
   -- Colorscheme
   --
-  { import = "astrocommunity.colorscheme.dracula" },
+  { import = "astrocommunity.colorscheme.dracula-nvim" },
 
   -- completion plugins
   --
@@ -26,8 +26,10 @@ return {
   -- tools plugins
   --
   { import = "astrocommunity.markdown-and-latex.markdown-preview-nvim" },
+  { import = "astrocommunity.editing-support.nvim-regexplainer" },
 
   -- outher plugins
   --
   { import = "astrocommunity.media.vim-wakatime" },
+  { import = "astrocommunity.bars-and-lines.heirline-mode-text-statusline" },
 }
