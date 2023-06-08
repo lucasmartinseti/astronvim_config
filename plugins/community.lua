@@ -27,6 +27,7 @@ return {
   --
   { import = "astrocommunity.markdown-and-latex.markdown-preview-nvim" },
   { import = "astrocommunity.editing-support.nvim-regexplainer" },
+  { import = "astrocommunity.project.nvim-spectre" },
 
   -- outher plugins
   --

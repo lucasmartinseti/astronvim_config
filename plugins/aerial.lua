@@ -1,7 +1,7 @@
 return {
   "stevearc/aerial.nvim",
   opts = {
-    open_automatic = true,
+    open_automatic = false,
     preview = true,
     layout = {
       -- These control the width of the aerial window.

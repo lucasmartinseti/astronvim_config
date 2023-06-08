@@ -31,6 +31,10 @@ return {
     ["<leader>v"] = { name = " Venv Selector" },
     ["<leader>vs"] = { "<cmd>:VenvSelect<cr>", desc = "Venv Select" },
     ["<leader>vc"] = { "<cmd>:VenvSelectCached<cr>", desc = "Venv Select Cached" },
+    --
+    -- search and replace
+    -- ["<leader>s"] = { name = " Search and Replace" },
+    -- ["<leader>sr"] = { "<cmd>SearchAndReplace<cr>", desc = "Search and Replace" },
   },
   t = {
     -- setting a mapping to false will disable it
