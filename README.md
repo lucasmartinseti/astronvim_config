@@ -1,63 +1,34 @@
-### Install and config NeoVim IDE Developer
+# AstroNvim Template
 
-#### Install dependencies
+**NOTE:** This is for AstroNvim v4+
 
-###### macOS
+A template for getting started with [AstroNvim](https://github.com/AstroNvim/AstroNvim)
 
-```console
-brew install ripgrep awk nvim node ipython lua luarocks lazygit pyenv pyenv-virtualenv ruby rbenv curl wget gcc fd c llvm glib
-```
+## 🛠️ Installation
 
-##### Install AstroNvim
+#### Make a backup of your current nvim and shared folder
 
-```console
+```shell
 mv ~/.config/nvim ~/.config/nvim.bak
 mv ~/.local/share/nvim ~/.local/share/nvim.bak
 mv ~/.local/state/nvim ~/.local/state/nvim.bak
 mv ~/.cache/nvim ~/.cache/nvim.bak
-git clone --depth 1 https://github.com/AstroNvim/AstroNvim ~/.config/nvim
+```
+
+#### Create a new user repository from this template
+
+Press the "Use this template" button above to create a new repository to store your user configuration.
+
+You can also just clone this repository directly if you do not want to track your user configuration in GitHub.
+
+#### Clone the repository
+
+```shell
+git clone https://github.com/<your_user>/<your_repository> ~/.config/nvim
+```
+
+#### Start Neovim
+
+```shell
 nvim
-```
-
-
-##### Install user configuration
-
-```console
-git clone git@gitlab.com:lucasmartins.py/nvim.git ~/.config/nvim/lua/user
-```
-    Alter `git@gitlab.com:lucasmartins.py/nvim.git` to `https://gitlab.com/lucasmartins.py/nvim.git`, git-ssh only edit project. 
-
-##### Install venv path nvim
-
-```console
-pyenv install 3.11.3
-pyenv virtualenv 3.11.3 nvim
-pyenv local nvim
-pip install wheel pynvim doq flake8 bandit black isort pyproject-flake8
-```
-
-##### Install node packages
-
-```console
-npm config set prefix '~/.local/'
-npm i -g pyright dockerfile-language-server-nodejs typescript-language-server typescript vscode-json-languageservice yaml-language-server vscode-langservers-extracted
-```
-
-##### Install plugins on nvim
-
-```console
-nvim --headless -c 'Lazy install'
-```
-
-##### Enable Wakatime plugin
-
-```console
-nvim -c 'WakaTimeApiKey'
-```
-> Access Wakatime API key at https://wakatime.com/settings/account
-
-##### Enable Codeium plugin
-
-```console
-nvim -c 'Codeium Auth'
 ```
