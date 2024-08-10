@@ -21,6 +21,7 @@ return {
   { import = "astrocommunity.pack.yaml" },
   { import = "astrocommunity.pack.toml" },
   { import = "astrocommunity.pack.json" },
+  { import = "astrocommunity.pack.go" },
   { import = "astrocommunity.pack.typescript" },
 
   -- tools plugins
