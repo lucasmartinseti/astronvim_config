@@ -24,6 +24,10 @@ return {
   { import = "astrocommunity.pack.go" },
   { import = "astrocommunity.pack.typescript" },
 
+  --- Workflow plugins
+  ---
+  { import = "astrocommunity.workflow.hardtime-nvim"},
+
   -- tools plugins
   --
   { import = "astrocommunity.markdown-and-latex.markdown-preview-nvim" },
