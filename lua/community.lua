@@ -23,15 +23,17 @@ return {
   { import = "astrocommunity.pack.json" },
   { import = "astrocommunity.pack.go" },
   { import = "astrocommunity.pack.typescript" },
+  { import = "astrocommunity.pack.docker" },
 
   --- Workflow plugins
   ---
-  { import = "astrocommunity.workflow.hardtime-nvim"},
+  --- { import = "astrocommunity.workflow.hardtime-nvim"},
 
   -- tools plugins
   --
   { import = "astrocommunity.markdown-and-latex.markdown-preview-nvim" },
   { import = "astrocommunity.editing-support.nvim-regexplainer" },
+  { import = "astrocommunity.docker.lazydocker" },
 
   -- outher plugins
   --
