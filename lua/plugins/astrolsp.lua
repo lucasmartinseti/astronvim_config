@@ -25,6 +25,8 @@ return {
           "go",
           "python",
           "dockerfile",
+          "javascript",
+          "javascriptreact"
         },
         ignore_filetypes = { -- disable format on save for specified filetypes
           -- "python",
