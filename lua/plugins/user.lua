@@ -34,7 +34,7 @@ return {
         "    ██  ██ ██  ██  ██  ██ ██  ██  ██",
         "    ██   ████   ████   ██ ██      ██",
         "                                    ",
-        "          @lucasmartins.py        ",
+        "          @lucasmartinseti        ",
       }
       return opts
     end,
