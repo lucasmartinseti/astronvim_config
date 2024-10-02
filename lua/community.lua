@@ -13,6 +13,10 @@ return {
   --
   { import = "astrocommunity.completion.codeium-vim" },
 
+  -- AI plugins
+  --
+  { import = "astrocommunity.editing-support.chatgpt-nvim" },
+
   -- pack plugins dev
   --
   { import = "astrocommunity.pack.python" },
