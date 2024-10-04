@@ -83,19 +83,19 @@ return {
       )
     end,
   },
- {
-    "jackMort/ChatGPT.nvim",
-        event = "VeryLazy",
-        config = function()
-            -- Carregando a configuração da OpenAI de um arquivo separado
-            require("chatgpt").setup({
-                model = "gpt-4",
-            })
-        end,
-        requires = {
-            "MunifTanjim/nui.nvim",
-            "nvim-lua/plenary.nvim",
-            "nvim-telescope/telescope.nvim"
-        }
-  },
+ -- {
+ --    "jackMort/ChatGPT.nvim",
+ --        event = "VeryLazy",
+ --        config = function()
+ --            -- Carregando a configuração da OpenAI de um arquivo separado
+ --            require("chatgpt").setup({
+ --                model = "gpt-4",
+ --            })
+ --        end,
+ --        requires = {
+ --            "MunifTanjim/nui.nvim",
+ --            "nvim-lua/plenary.nvim",
+ --            "nvim-telescope/telescope.nvim"
+ --        }
+ --  },
 }
