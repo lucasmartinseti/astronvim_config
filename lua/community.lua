@@ -5,11 +5,17 @@
 ---@type LazySpec
 return {
   "AstroNvim/astrocommunity",
+
   -- Colorscheme
   --
-  { import = "astrocommunity.colorscheme.dracula-nvim" },
+  { import = "astrocommunity.colorscheme.sonokai" },
 
-  -- completion plugins
+  -- Statusline plugins
+  --
+  { import = "astrocommunity.recipes.heirline-nvchad-statusline" },
+  --
+
+  -- Completion plugins
   --
   { import = "astrocommunity.completion.codeium-vim" },
 
