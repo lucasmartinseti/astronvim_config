@@ -13,7 +13,6 @@ return {
   -- Statusline plugins
   --
   { import = "astrocommunity.recipes.heirline-nvchad-statusline" },
-  --
 
   -- Completion plugins
   --
@@ -44,6 +43,7 @@ return {
   { import = "astrocommunity.markdown-and-latex.markdown-preview-nvim" },
   { import = "astrocommunity.editing-support.nvim-regexplainer" },
   { import = "astrocommunity.docker.lazydocker" },
+  { import = "astrocommunity.search.nvim-spectre" },
 
   -- outher plugins
   --
