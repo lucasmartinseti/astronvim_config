@@ -20,6 +20,10 @@ return {
   {
     "goolord/alpha-nvim",
     opts = function(_, opts)
+      local function neovim_version()
+        local v = vim.version()
+        return " Neovim v" .. v.major .. "." .. v.minor .. "." .. v.patch
+      end
       -- customize the dashboard header
       opts.section.header.val = {
         " █████  ███████ ████████ ██████   ██████",
@@ -27,14 +31,16 @@ return {
         "███████ ███████    ██    ██████  ██    ██",
         "██   ██      ██    ██    ██   ██ ██    ██",
         "██   ██ ███████    ██    ██   ██  ██████",
-        " ",
+        "                                    ",
         "    ███    ██ ██    ██ ██ ███    ███",
         "    ████   ██ ██    ██ ██ ████  ████",
         "    ██ ██  ██ ██    ██ ██ ██ ████ ██",
         "    ██  ██ ██  ██  ██  ██ ██  ██  ██",
         "    ██   ████   ████   ██ ██      ██",
         "                                    ",
-        "          @lucasmartinseti        ",
+        "                                    ",
+       " @lucasmartinseti         ",
+        neovim_version(),
       }
       return opts
     end,
