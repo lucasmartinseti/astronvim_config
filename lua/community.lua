@@ -44,6 +44,7 @@ return {
   { import = "astrocommunity.editing-support.nvim-regexplainer" },
   { import = "astrocommunity.docker.lazydocker" },
   { import = "astrocommunity.search.nvim-spectre" },
+  { import = "astrocommunity.utility.noice-nvim" },
 
   -- outher plugins
   --
