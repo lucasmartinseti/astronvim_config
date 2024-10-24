@@ -35,6 +35,9 @@ return {
   { import = "astrocommunity.pack.docker" },
   { import = "astrocommunity.pack.java" },
   { import = "astrocommunity.pack.vue" },
+  { import = "astrocommunity.pack.rust" },
+  { import = "astrocommunity.pack.terraform" },
+  -- { import = "astrocommunity.pack.sql" },
 
   --- Workflow plugins
   ---
@@ -47,7 +50,7 @@ return {
   { import = "astrocommunity.docker.lazydocker" },
   { import = "astrocommunity.search.nvim-spectre" },
   { import = "astrocommunity.remote-development.remote-sshfs-nvim" },
-
+  { import = "astrocommunity.project.projectmgr-nvim" },
   -- outher plugins
   --
   { import = "astrocommunity.media.vim-wakatime" },
