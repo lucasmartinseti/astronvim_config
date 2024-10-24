@@ -27,7 +27,13 @@ return {
           "python",
           "dockerfile",
           "javascript",
-          "javascriptreact"
+          "javascriptreact",
+          "html",
+          "css",
+          "json",
+          "markdown",
+          "yaml",
+          "toml"
         },
         ignore_filetypes = { -- disable format on save for specified filetypes
           -- "python",
