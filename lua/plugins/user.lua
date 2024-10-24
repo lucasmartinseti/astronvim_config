@@ -24,6 +24,13 @@ return {
           visible = true,
           hide_dotfiles = false,
           hide_gitignored = false,
+          hide_by_name = {
+            "node_modules",
+            ".git",
+            ".DS_Store",
+            "thumbs.db",
+            "node_modules",
+          },
         },
       },
     },
