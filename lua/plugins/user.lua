@@ -14,7 +14,21 @@ return {
   -- },
 
   -- == Examples of Overriding Plugins ==
+  --
+  -- customize neo-tree options
+  {
+    "nvim-neo-tree/neo-tree.nvim",
+    opts = {
+      filesystem = {
+        filtered_items = {
+          visible = true,
+          hide_dotfiles = false,
+          hide_gitignored = false,
+        },
+      },
+    },
 
+  },
   -- customize alpha options
   {
     "goolord/alpha-nvim",
@@ -38,7 +52,7 @@ return {
         "    ██   ████   ████   ██ ██      ██",
         "                                    ",
         "                                    ",
-       " @lucasmartinseti         ",
+       " @lucasmartinseti",
         neovim_version(),
       }
       return opts
