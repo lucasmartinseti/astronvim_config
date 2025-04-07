@@ -3,8 +3,8 @@ return {
   opts = {
     dashboard = {
       sections = {
-        { section = "header" },
-        { section = "keys", padding = 1, },
+        { section = "header"},
+        { section = "keys", icon = "", title = "@lucasmartinseti", padding = 1, },
         { section = "startup" },
         { pane = 2, icon = " ", title = "Recent Files", section = "recent_files", indent = 2, padding = 1, },
         { pane = 2, icon = " ", title = "Projects", section = "projects", indent = 2, padding = 1, },
