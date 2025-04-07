@@ -24,6 +24,7 @@ return {
 
   -- pack plugins dev
   --
+  { import = "astrocommunity.git.gitgraph-nvim" },
   { import = "astrocommunity.pack.python" },
   { import = "astrocommunity.pack.lua" },
   { import = "astrocommunity.pack.bash" },
