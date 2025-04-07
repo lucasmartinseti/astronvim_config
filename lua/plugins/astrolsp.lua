@@ -1,3 +1,4 @@
+local gitlab_ci_ls = require "lspconfig.configs.gitlab_ci_ls"
 -- AstroLSP allows you to customize the features in AstroNvim's LSP configuration engine
 -- Configuration documentation can be found with `:h astrolsp`
 -- NOTE: We highly recommend setting up the Lua Language Server (`:LspInstall lua_ls`)
@@ -16,7 +17,6 @@ return {
       semantic_tokens = true, -- enable/disable semantic token highlighting
       signature_help = true, -- enable automatic signature help popup globally on startup
     },
-    -- customize lsp formatting options
     formatting = {
       -- control auto formatting on save
       format_on_save = {
