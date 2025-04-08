@@ -7,7 +7,6 @@ return {
             local home = vim.fn.expand("$HOME")
             require("chatgpt").setup({
               api_key_cmd = "gpg --decrypt " .. home .. "/.config/openai/secret.txt.gpg",
-                model = "gpt-4",
                 actions_paths = {
                   vim.fn.stdpath("config") .. "/chatgpt_actions.json"
                 },
