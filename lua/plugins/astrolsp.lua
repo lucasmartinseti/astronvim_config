@@ -31,7 +31,8 @@ return {
           "json",
           "markdown",
           "yaml",
-          "toml"
+          "toml",
+          "xml"
         },
         ignore_filetypes = { -- disable format on save for specified filetypes
           -- "python",
